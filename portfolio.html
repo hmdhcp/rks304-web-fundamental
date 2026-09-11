@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Moses Hendika Purba</title>
+<meta name="description" content="Kumpulan proyek dan riset Moses Hendika Purba di bidang keamanan siber.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>moses<span class="path">/hendika</span></a>
+    <nav aria-label="Navigasi utama">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="wrap" style="grid-template-columns: 1fr;">
+      <div>
+        <p class="hero-kicker">moses_hendika</p>
+        <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Proyek & riset</h1>
+        <p class="bio">Beberapa proyek latihan dan riset kecil seputar keamanan jaringan, aplikasi web, dan otomasi — sebagian besar dikerjakan sebagai bagian dari perkuliahan dan latihan CTF.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>Case files</h2>
+        <span class="tag">projects/</span>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <span class="status">// completed</span>
+          <h3>Pemindai Kerentanan Web Sederhana</h3>
+          <p class="desc">Skrip Python yang memeriksa header keamanan dasar (CSP, HSTS, X-Frame-Options) pada sebuah domain dan menghasilkan laporan ringkas.</p>
+          <div class="badge-row">
+            <span class="badge">Python</span>
+            <span class="badge">Requests</span>
+          </div>
+          <a href="#" class="link">github.com/moseshendika/header-scanner →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="status">// completed</span>
+          <h3>Analisis Trafik Jaringan Latihan</h3>
+          <p class="desc">Menangkap dan menganalisis paket pada lab jaringan tertutup untuk mengidentifikasi pola trafik mencurigakan menggunakan Wireshark.</p>
+          <div class="badge-row">
+            <span class="badge">Wireshark</span>
+            <span class="badge">Networking</span>
+          </div>
+          <a href="#" class="link">github.com/moseshendika/traffic-lab →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="status">// in progress</span>
+          <h3>Dokumentasi Write-up CTF</h3>
+          <p class="desc">Kumpulan catatan penyelesaian tantangan CTF kategori web exploitation, disusun untuk latihan dan referensi pribadi.</p>
+          <div class="badge-row">
+            <span class="badge">Web Exploitation</span>
+            <span class="badge">Markdown</span>
+          </div>
+          <a href="#" class="link">github.com/moseshendika/ctf-writeups →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="status">// completed</span>
+          <h3>Website Profil Pribadi (Tugas Ini)</h3>
+          <p class="desc">Website profil ini sendiri — dibangun dengan HTML semantik dan Vanilla CSS sebagai tugas praktikum Web Fundamental.</p>
+          <div class="badge-row">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+          </div>
+          <a href="#" class="link">github.com/moseshendika/rks304-web-fundamental →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%;">
+    <span>© 2026 Moses Hendika Purba</span>
+    <span>rks304-web-fundamental / minggu1</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Moses Hendika Purba</title>
+<meta name="description" content="Hubungi Moses Hendika Purba untuk konsultasi, kolaborasi proyek, atau pertanyaan umum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>moses<span class="path">/hendika</span></a>
+    <nav aria-label="Navigasi utama">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="wrap" style="grid-template-columns: 1fr;">
+      <div>
+        <p class="hero-kicker">moses_hendika</p>
+        <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Mari terhubung</h1>
+        <p class="bio">Terbuka untuk diskusi seputar keamanan siber, kolaborasi proyek, atau sekadar bertukar catatan riset. Isi formulir di bawah dan saya akan membalas secepatnya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap contact-layout">
+
+      <div class="terminal-panel">
+        <div class="terminal-bar">
+          <span class="dots"><span></span><span></span><span></span></span>
+          send_message.form
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+
+          <div class="field">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nama kamu" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="kamu@email.com" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="category">Kategori / Keperluan</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Pilih keperluan</option>
+                <option value="konsultasi">Konsultasi</option>
+                <option value="kolaborasi">Kolaborasi Proyek</option>
+                <option value="pertanyaan">Pertanyaan Umum</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="urgency">Tingkat Urgensi</label>
+              <select id="urgency" name="urgency">
+                <option value="biasa" selected>Biasa</option>
+                <option value="penting">Penting</option>
+                <option value="mendesak">Mendesak</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            Saya setuju data ini digunakan hanya untuk membalas pesan saya.
+          </label>
+
+          <button type="submit">Kirim Pesan</button>
+          <p class="form-note">// formulir ini bersifat demo untuk keperluan tugas praktikum</p>
+        </form>
+      </div>
+
+      <div class="contact-alt">
+        <div class="item">
+          <h3>Email</h3>
+          <p>mosespurba14@example.com</p>
+        </div>
+        <div class="item">
+          <h3>Lokasi</h3>
+          <p>Batam, Kepulauan Riau, Indonesia</p>
+        </div>
+        <div class="item">
+          <h3>Respons</h3>
+          <p>Biasanya membalas dalam 1–2 hari kerja.</p>
+        </div>
+        <div class="item">
+          <h3>Media sosial</h3>
+          <p>github.com/moseshendika<br>linkedin.com/in/moseshendika</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%;">
+    <span>© 2026 Moses Hendika Purba</span>
+    <span>rks304-web-fundamental / minggu1</span>
+  </div>
+</footer>
+
+</body>
+</html>
